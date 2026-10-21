@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wyay"
+version = "1.0.0"
+description = "A graphical AUR package browser and installer"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["PySide6>=6.6"]
+
+[project.scripts]
+wyay = "wyay:main"
+
+[tool.setuptools]
+py-modules = ["wyay"]
